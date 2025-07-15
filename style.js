@@ -26,21 +26,37 @@ btn1.addEventListener("click",()=>{
 
     
 
-}),
+})
 
-
+let sum=0
 btnon.addEventListener("click",()=>{
-    const inputn=parseInt(balance.innerText)
-    const main=parseInt(inp.value)
+    const inputn=parseInt(inp.value)
+    const pri=parseInt(take.innerText)
+    const tot= inputn+pri
+    sum=sum+inputn
+    take.innerText=sum
 
-    const all= inputn-main
+
+   const hh=parseInt(inp.value)
+   const ff=parseInt(balance.innerText)
+   const max=ff-hh
+   balance.innerText=max
     
-    take.innerText=all
 
-    if(balance.innerText<inp.value){
-        alert ("you havent' money")
-        balance.innerText=""
-    }
+    
+    
+
  
 
+})
+
+btnon.addEventListener("click",()=>{
+
+    if(balance.innerText<inp.value){
+        alert ("Vhi apner kasay ato take ni")
+         tkae.innerText=""
+        
+    }
+
+   
 })
